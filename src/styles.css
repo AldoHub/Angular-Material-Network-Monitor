@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+header {
+    height: 600px;
+}
+
+header div {
+    padding-top: 100px;
+    width: 50%;
+    margin-left: 5%;
+}
+
+header div h1 {
+    font-size: 120px;
+    line-height: 120px;
+}
+
+header div p {
+ 
+    font-size: 1.3rem;
+    width: 300px;
+}
+
+main section {
+    width: 70%;
+    margin: 120px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main section h2 {
+    width: 200px;
+}
+main section div {
+    width: 70%;
+}
+
+.error {
+    font-weight: bold;
+    color: red;;
+}
+
+.active {
+    font-weight: bold;
+    color: green;
+}
+
+button {
+    background: #FF5F6D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    color: #eee;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}

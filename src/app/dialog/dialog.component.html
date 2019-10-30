@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Network Service</h1>
+<div mat-dialog-content>
+ 
+  <p>The network sevice returned the next value: <span [ngClass]="{'error' : data.currentStatus == 'OFFLINE', 'active' : data.currentStatus == 'ONLINE'}" >{{data.currentStatus}}</span></p>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Close</button>
+  <!-- pass the data you need using the data object we pass in the beginning -->
+  <button mat-button [mat-dialog-close]="data.currentStatus" cdkFocusInitial>Do something</button>
+</div>
